@@ -153,7 +153,6 @@ class singlepath:
         
         
         self.counterclases=np.zeros(len(clases))
-        
         self.counterclases[clases[featurestring]]+=1
         self.str=featurestring# La primera vez se le agrega 1 y se deja por defecto en esa clase. 
         
@@ -311,13 +310,13 @@ class tracking:
         self.p=paths()
         
         
-    def insertNewObject(self,x,y,w,h,strFeature='Objeto'):
+    def insertNewObject(self,x,y,w,h,strFeature='peaton'):
         """
         Funcion que inserta un nuevo objeto a la lista de objetos actuales a seguir\n
         """
         self.o.insertObjet(x,y,w,h,strFeature)
         
-    def insertNewPath(self,idx,x,y,w,h,featurestring='Objeto'):
+    def insertNewPath(self,idx,x,y,w,h,featurestring='peaton'):
         """
         Funcion que inserta un nuevo trayecto a la lista\n
         """
